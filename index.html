@@ -14,33 +14,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body >
-    <header>
-        <nav class="flex items-center justify-between mx-36 mt-8">
-            <img src="assets/logo.png" alt="">
-            <ul class="flex gap-12">
-                <li class="font-bold text-[#252432]"><a href="">Home</a></li>
+<body class="bg-[#F5F8FF]">
+    <header class="max-w-full">
+         <nav class="mx-4 mr-14 md:mx-36 mt-6 flex justify-between items-center">
+            <div>
+                <img class="w-16 md:w-32" src="assets/logo.png" alt="">
+            </div>
+            <ul class="hidden md:flex justify-between gap-12">
+                <li class="text-[#252432] font-bold"><a href="">Home</a></li>
                 <li class="text-[#8987A1]"><a href="">Shop</a></li>
                 <li class="text-[#8987A1]"><a href="">About Us</a></li>
-                <li>
-                   <i class="fa-solid fa-cart-shopping"></i>
-                   <a href="">Cart($56)</a>
-                </li>
             </ul>
-        </nav>
-        <div class="flex justify-between mt-32 mx-36">
-            <div class="w-xl">
-                <h1 class="font-bold text-6xl noto mt-[162px]">ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span></h1>
-                <p class="Inter text-2xl mt-3.5 text-gray-500">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            <div>
+                <i class="fa-solid fa-cart-plus"></i>
+                <a href="">Cart($56)</a>
             </div>
-            <img class="w-[35.6rem] h-[22.18rem] mt-[106px]" src="assets/hero-flower.png" alt="">
-        </div>
+         </nav>
     </header>
     <main>
-
+        <section class="flex flex-col-reverse md:flex-row justify-between md:mx-36 mt-[7.5rem] ">
+            <div class="w-96 mx-4 mt-7 md:w-xl">
+                <h3 class="w-48 mb-3 noto font-bold text-2xl md:text-[4.06rem]">ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span></h3>
+                <p class="text-[0.87rem] Inter text-lg md:text-2xl text-gray-600 mt-0 md:mt-6">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+                </p>
+            </div>
+            <div class="w-full m-0 md:w-[33.75rem] mt-6 md:mt-0">
+                <img src="assets/hero-flower.png" alt="">
+            </div>
+        </section>
     </main>
     <footer>
-
+ 
     </footer>
 </body>
 </html>
